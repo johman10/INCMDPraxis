@@ -1,0 +1,24 @@
+{
+  "name": "prototyping-sucks2",
+  "main": "index.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mirabeau-nl/prototyping-sucks",
+  "authors": [
+    "Rick van Schalkwijk <rvanschalkwijk@mirabeau.nl>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}
