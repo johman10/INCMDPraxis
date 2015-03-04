@@ -5,27 +5,27 @@ app.set('port', (process.env.PORT || 5000));
 
 var mongoose = require('mongoose');
 
-mongoose.connect('rick:BarBar@ds048537.mongolab.com:48537/prototyping-sucks', function (error) {
+mongoose.connect('Johman10:1234567890@ds039251.mongolab.com:39251/mower_preorders', function (error) {
     if (error) {
         console.log(error);
     }
 });
 
-var kittySchema = mongoose.Schema({
+var userSchema = mongoose.Schema({
         name: String
       });
 
-var Kitten = mongoose.model('Kitten', kittySchema);
+var Users = mongoose.model('users', userSchema);
 
-app.get('/getkitten', function (req, res, next) {
-	Kitten.find({}, function (err, docs) {
+app.get('/getuser', function (req, res, next) {
+    Users.find({}, function (err, docs) {
        res.json(docs);
     });
 });
 
-app.get('/createKitten', function(req, resp) {
-    var newKitten = new Kitten({name: req.query.katName});
-    newKitten.save(function(err){ // will this callback always be called correctly?
+app.get('/createuser', function(req, resp) {
+    var newUser = new User({name: req.query.userName});
+    newUser.save(function(err){ // will this callback always be called correctly?
         if(err) {
             resp.send('ERROR!');
         }
