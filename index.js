@@ -15,10 +15,10 @@ var userSchema = mongoose.Schema({
         name: String
       });
 
-var Users = mongoose.model('users', userSchema);
+var User = mongoose.model('users', userSchema);
 
 app.get('/getuser', function (req, res, next) {
-    Users.find({}, function (err, docs) {
+    User.find({}, function (err, docs) {
        res.json(docs);
     });
 });

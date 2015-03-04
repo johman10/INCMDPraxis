@@ -40,10 +40,10 @@
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <form action="/createKitten">
+          <form action="/createuser">
             <div class="form-group">
-              <label for="exampleInputEmail1">Cat Name</label>
-              <input type="text" class="form-control" id="katNameInput" name="katName" placeholder="Enter katname">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="text" class="form-control" id="katNameInput" name="userName" placeholder="Enter name">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
           </form>
@@ -90,7 +90,7 @@
         <!-- endbuild -->
 
 <script>
-  $.get( "/getkitten", function( data ) {
+  $.get( "/getuser", function( data ) {
 
   $.each(data, function(i, val){
        $( "#table" ).append( "<tr><td>"+ i +"</td><td>"+val['name']+"</td></tr>");
