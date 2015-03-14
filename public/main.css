@@ -11,6 +11,43 @@ body {
   padding-bottom: 20px;
 }
 
+.header_logo {
+  height: 91px;
+}
+
+.nav-pills {
+  border-radius: 0;
+  background-color: #606060;
+  font-size: 12px;
+  height: 45px;
+}
+
+.nav-pills li {
+  display: inline-block;
+  height: 45px;
+  border-right: dotted 1px #fff;
+}
+
+.nav-pills .nav-secondary {
+  background-color: #969696;
+}
+
+.nav-pills .nav-highlight {
+  background-color: #e3000f;
+}
+
+.nav-pills li a {
+  padding: 6px 15px;
+  color: #fff;
+  height: 100%;
+  border-radius: 0;
+}
+
+.nav-pills li a:hover {
+  color: #000;
+  background-color: #fd0;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -65,9 +102,6 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
 
   /* Remove the padding we set earlier */
   .header,
