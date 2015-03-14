@@ -9,6 +9,12 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: Arial, sans-serif;
+  color: #606060;
+}
+
+.container {
+  max-width: 1026px;
 }
 
 .header_logo {
@@ -46,6 +52,33 @@ body {
 .nav-pills li a:hover {
   color: #000;
   background-color: #fd0;
+}
+
+.product-title {
+  color: #e3000f;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #000;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-price-container {
+  border: 1px solid #e5e5e5;
+  height: 100px;
+}
+
+.product-price {
+  line-height: 100px;
+  color: #e3000f;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.product-quantity {
+  margin-top: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
