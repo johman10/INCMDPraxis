@@ -110,13 +110,5 @@
       <script src="bower_components/bootstrap/js/collapse.js"></script>
       <script src="bower_components/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
-
-    <script>
-      $.get( "/getuser", function( data ) {
-        $.each(data, function(i, val){
-          $( "#table" ).append('<tr><td>' + i + '</td><td>' + val.name + '</td><td>' + val.email + '</td></tr>');
-        });
-      });
-    </script>
   </body>
 </html>
